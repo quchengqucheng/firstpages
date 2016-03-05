@@ -1,0 +1,722 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-family:  "Open Sans","Hevetica Neue","Helvetica",Verdana,sans-serif;
+	
+}
+body {
+	font-size:14px;
+	width: 100%;
+	background-color: #f1f2f2;
+}
+a {
+	text-decoration: none;
+}
+/*--------------------------------------------------------banner-----------------------------------------------------------*/
+#banner {
+	/*position: relative;*/
+	width: 100%;
+	height: 200px;
+	margin: 0;
+	text-align: center;
+	/*border: 1px solid transparent;*/
+	background: #ccc;
+}
+#banner h1 {
+	line-height: 170px;
+    color: #333;
+	font-size: 5em;
+}
+#banner ul {
+	list-style-type: none;
+	min-width: 480px;
+}
+#banner ul li {
+	display: inline;
+	padding: 0 10px;
+	border: 1px solid;
+	border-color: transparent #666 transparent transparent;
+}
+#banner > nav a {
+	color: #666;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#banner > nav a:hover {
+	color: #711C1C;
+}
+/*--------------------------------------------------------albums-----------------------------------------------------------*/
+
+#albums {
+    min-width: 1000px;
+}
+.section-header {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	/*border: 2px solid green;*/
+}
+.section-header h1 {
+	text-transform: uppercase;
+	line-height: 50px;
+	color: #555;
+}
+#albums ol {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	/*height: 600px; */
+	/*__________________________________________________高度设置？__________*/
+	font-size: 0;
+	/*____________________________去除空白符！！！！*/
+	list-style-type: none;
+	/*border: 1px solid #E53D1D;*/
+}
+.albums-pic {
+	float: left;
+	/*border: 1px solid yellow;*/
+}
+/*__________________________________________________为什么不管用？__________*/
+/*----------------------------图片框架--------------------------*/
+#pic1,
+#pic2,
+#pic3,
+#pic4,
+#pic5 {
+	position: relative;
+	float: left;
+}
+#pic2,
+#pic3,
+#pic4,
+#pic5 {
+	/*display: inline;*/
+	width: 25%;
+
+}
+#pic1 {
+	
+	/*position: relative;*/
+	width: 40%;
+	/*height: 500px;*/
+	/*border: 5px solid black;*/
+
+}
+#pic1 img {
+    width: 100%;
+}
+#pic2 img,
+#pic3 img,
+#pic4 img,
+#pic5 img {
+	width: 100%;
+}
+
+#pic2 {
+	margin-left: 10%;
+}
+#pic5 {
+	margin-right: 10%;
+}
+/*----------------------------图片滑动栏--------------------------*/
+#pic-text-broad1 {
+	position: absolute;
+	bottom: -25%;
+	width: 100%;
+	height: 40%;
+	text-align: center;
+	color: #000;
+	background-color: #fff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;	
+}
+#pic-text-broad1:hover {
+	height: 50%;
+}
+#pic-text-broad1:hover #lyrics1{
+	opacity: 1;
+}
+#pic-text-broad2 {
+	position: absolute;
+	top: 0;
+	left:  -40%;
+	width: 45%;
+	height: 100%;
+	text-align: center;
+	color: #000;
+	background-color: #ccc;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+#pic-text-broad2:hover {
+	width: 55%;
+}
+#pic-text-broad2:hover #lyrics2{
+	opacity: 1;
+}
+#pic-text-broad3 {
+	position: absolute;
+	bottom: 0;
+	right:  0;
+	width: 100%;
+	height: 40%;
+	text-align: center;
+	color: #000;
+	background-color: #fff;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+#pic-text-broad3:hover {
+	height: 50%;
+}
+#pic-text-broad3:hover #lyrics3{
+	opacity: 1;
+}
+#pic-text-broad4 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 40%;
+	text-align: center;
+	color: #000;
+	background-color: #ccc;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+#pic-text-broad4:hover {
+	height: 50%;
+}
+#pic-text-broad4:hover #lyrics4{
+	opacity: 1;
+}
+#pic-text-broad5 {
+	position: absolute;
+	top: 0;
+	right: -40%;
+	width: 45%;
+	height: 100%;
+	text-align: center;
+	color: #000;
+	background-color: #ccc;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+#pic-text-broad5:hover {
+	width: 55%;
+}
+#pic-text-broad5:hover #lyrics5{
+	opacity: 1;
+}
+/*----------------------------图片小三角--------------------------*/
+.pic-text-arrow {
+	width: 0;
+	height: 0;
+	border: 30px solid;
+}
+#arrow1 {
+	position: relative;
+	top: -25px;
+	border-color: transparent transparent #fff transparent;
+}
+#arrow2 {
+	position: absolute;
+	left: 95%;
+	top: 50%;
+	border-color: transparent transparent transparent #ccc;
+}
+#arrow3 {
+	position: absolute;
+	left: 60%;
+	top: -50px;
+	border-color: transparent transparent #fff transparent;
+}
+#arrow4 {
+	position: absolute;
+	left: 20%;
+	top: -50px;
+	border-color: transparent transparent #ccc transparent;
+}
+#arrow5 {
+	position: absolute;
+	left: -50px;
+	top: 50%;
+	border-color: transparent #ccc transparent transparent;
+}
+/*----------------------------图片滑动栏内部结构--------------------------*/
+.pic-text-time {
+	font-size: 18px;
+	color: #888;
+	font-family: "Trajan Pro","Trajan Pro",sans-serif;
+}
+
+.pic-text-title {
+	font-family: Verdana,sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	color: #222;
+}
+.pic-text-lyrics {
+	font-size: 15px;
+	color: #444;
+	font-family: courier,sans-serif;
+}
+#time1 {
+	position: absolute;
+	top: 10%;
+	left: 15%;
+}
+#title1 {
+	position: relative;
+	top: 70px;
+}
+#lyrics1 {
+	position: relative;
+	top: 100px;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#time2,
+#time5 {
+	position: relative;
+	top: 20px;
+}
+#title2,
+#title5 {
+	position: relative;
+	top: 8%;
+	overflow: hidden; 
+}
+#lyrics2,
+#lyrics5 {
+	position: relative;
+	top: 15%;
+	opacity: 0;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+#time3,
+#time4 {
+	position: absolute;
+	top: 10%;
+	left: 15%;
+}
+#title3,
+#title4 {
+	position: relative;
+	top: 28%;
+}
+#lyrics3,
+#lyrics4 {
+	position: relative;
+	top: 35%;
+	opacity: 0;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.clean {
+	clear: both;/*清除使section成为整体*/
+}
+/*--------------------------------------------------------single-----------------------------------------------------------*/
+#single {
+	min-width: 1000px;
+}
+
+#single ol {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	/*height: 600px;*/
+	 /*__________________________________________________高度设置？__________*/
+	font-size: 0;
+	/*____________________________去除空白符！！！！*/
+	list-style-type: none;
+	/*border: 1px solid #E53D1D;*/
+}
+#single li {
+	display: inline-block;
+	width: 25%;
+	vertical-align:top;/*把元素的顶端与行中最高元素的顶端对齐*/
+}
+#single li img {
+	width: 100%;
+
+}
+.single-text {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	font-size: 14px;
+	color: #444;
+	/*background-color: red;*/
+	/*border: 1px solid red;*/
+	text-align: center;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;	
+}
+/*----------------------------图片小三角--------------------------*/
+.triangle {
+	position: relative;
+	top: -35px;
+	left: 100px;
+	width: 0;
+	height: 0;
+	border: 25px solid;
+}
+#triangle-color1 {
+	border-color: transparent transparent #EDE799 transparent;
+}
+#triangle-color2 {
+	border-color: transparent transparent #B9ED99 transparent;
+}
+#triangle-color3 {
+	border-color: transparent transparent #99CAED transparent;
+}
+#triangle-color4 {
+	border-color: transparent transparent #ED9999 transparent;
+}
+/*----------------------------readmore按钮--------------------------*/
+.readmore {
+	position: absolute;
+	top: 70%;
+	right: 5%;
+	width: 20%;
+	line-height: 25px;
+	padding: 5px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+#readmore1,
+#readmore2,
+#readmore3,
+#readmore4 {
+	position: absolute;
+	top: 70%;
+	right: 5%;
+	width: 20%;
+	line-height: 25px;
+	padding: 5px;
+	border: 1px solid;
+	font-family:  Verdana,sans-serif;
+	font-weight: bold;
+	color: #888;
+	/*border-radius: 5px;*/
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;	
+}
+#readmore1 {
+	border-color: #D5CE77;
+	box-shadow: 3px 3px 1px #DDD787;
+	background-color: #EDE799;
+}
+#readmore2 {
+	border-color: #CBEBB7;
+	box-shadow: 3px 3px 1px #BEDCAB;
+	background-color: #CAF4B0;
+}
+#readmore3 {
+	border-color: #9AC3E1;
+	box-shadow: 3px 3px 1px #9ABFDA;
+	background-color: #B0D8F4;
+}
+#readmore4 {
+	border-color: #DE9595;
+	box-shadow: 3px 3px 1px #C49090;
+	background-color: #F4AEAE;
+}
+#readmore1:hover {
+	background-color: #E6E094;
+	border-color: #EDE799 #FBF7BD #FBF7BD #EDE799;
+	box-shadow: 1px 1px 1px #FBF7BD;
+
+}
+#readmore2:hover {
+	background-color: #B5D89F;
+	border-color: #B9ED99 #DCFFC6 #DCFFC6 #B9ED99;
+	box-shadow: 1px 1px 1px #DCFFC6;
+
+}
+#readmore3:hover {
+	background-color: #89B5D5;
+	border-color: #99CAED #B5E0FF #B5E0FF #99CAED;
+	box-shadow: 1px 1px 1px #B5E0FF;
+
+}
+#readmore4:hover {
+	background-color: #D99C9C;
+	border-color: #ED9999 #DA9898 #DA9898 #ED9999;
+	box-shadow: 1px 1px 1px #FFB8B8;
+
+}
+/*----------------------------文字--------------------------*/
+.single-text p:nth-child(odd){
+	position: absolute;
+	text-align: left;
+	top: 20%;
+	left: 10%;
+	width: 90%;
+	line-height: 1.5em;
+}
+.single-text p:nth-child(even)
+{
+	position: absolute;
+	text-align: left;
+	top: 20%;
+	left: 10%;
+	width: 50%;
+	line-height: 1.5em;
+}
+.single-text p span{
+	color: transparent;
+	opacity: 0;
+	-webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;	
+}
+#single-text1 {
+	background-color: #EDE799;
+}
+#single-text2 {
+	background-color: #B9ED99;
+}
+#single-text3 {
+	background-color: #99CAED;
+}
+#single-text4 {
+	background-color: #ED9999;
+}
+.single-text botton:hover .single-text{
+	top: 151.5px; 
+	height: 390px;
+	opacity: 0.8;
+}
+.single-text botton:hover .single-text p span{
+	color: #444;
+	opacity: 1;
+}
+/*----------------------------readmore按钮弹出框--------------------------*/
+#newtext1,
+#newtext2,
+#newtext3,
+#newtext4 {
+	position: absolute;
+	text-align: center;
+	top: -135%;
+	width: 80%;
+	height: 100%;
+	left: 10%;
+	background-color: #ccc;
+
+	opacity: 0.6;
+	border-radius: 10px;
+}
+/*--------------------------------------------------------member-----------------------------------------------------------*/
+#membermap {
+	position: relative;
+	background-color: #ccc;
+	/*text-align: center;*/
+	font-size: 0;
+	width: 100%;
+}
+#membermap img {
+	display: inline-block;
+	width: 60%;
+	/*margin-right: 35%;*/
+}
+
+#membermap ul {
+	float: right;
+	display: inline-block;
+	/*text-align: center;*/
+	font-size: 14px;
+	width: 40%;
+	height: 100%;
+	/*border: 1px solid red;*/
+}
+.member-border {
+	position: absolute;
+	left: 0;
+	border: 1px solid #ccc;
+	width: 8%;
+	height: 20%;
+	color: transparent;
+	opacity: 0.2;
+}
+#membermap a {
+	cursor: pointer;
+	color: #444;
+}
+#membermap a:hover span {
+	opacity: 1;
+}
+#chris .member-border {
+	top: 12%;
+	left: 44%;
+}
+#jonny .member-border {
+	top: 16%;
+	left: 24%;
+}
+#guy .member-border {
+	top: 19%;
+	left: 17%;
+}
+#will .member-border {
+	top: 36%;
+	left: 6%;
+}
+.note {
+	position: relative;
+	display: block;
+	text-align: left;
+	width: 35%;
+	line-height: 30px;
+	padding-left: 10px;
+	background-color: #A7A6A6;
+	margin: 10px 10px;
+	/*border: 1px solid red;*/
+}
+.note h3 {
+	display: inline;
+}
+.ladder-shaped {
+	position: absolute;
+	left: 100%;
+	border: 16px solid;
+	border-color: transparent transparent transparent #A7A6A6;
+}
+#introduction1,
+#introduction2,
+#introduction3,
+#introduction4 {
+	height: 250px;
+	width: 40%;
+	background-color: #F6F5F5;
+	/*border:1px solid red;*/
+	margin: 0 10px;
+}
+#coldplaymb {
+	position: absolute;
+	top: 0;
+	left: 60%;
+	
+}
+#coldplaymb img {
+	float: right;
+	height: 100%;
+}
+
+/*--------------------------------------------------------story-----------------------------------------------------------*/
+/*--------------------------------------------------------more-----------------------------------------------------------*/
+footer {
+	position: relative;
+	text-align: center;
+	background-color: #0B1120;
+	color: #ddd;
+	width: 100%;
+	height: 250px;
+}
+.more-relat {
+	display: inline-block;
+	top: 0;
+	width: 25%;
+	height: 180px;
+	background-color: #0B1120;
+	/*border: 1px solid red;*/
+}
+.more-relat h3 {
+	position: relative;
+	top: 20px;
+}
+#whywrite {
+	position: absolute;
+	top: 0;
+	left: 12.5%;
+}
+#links {
+	position: absolute;
+	top: 0;
+	left: 37.5%;
+}
+#aboutme{
+	position: absolute;
+	top: 0;
+	left: 62.5%;
+}
+#whywrite p{
+	position: relative;
+	top: 50px;
+	line-height: 20px;
+}
+
+#links ul,
+#aboutme ul {
+	position: relative;
+	display: block;
+	width: 50%;
+	left: 25%;
+	text-align: left;
+	top: 40px;
+	list-style-type: none;
+	/*border: 1px solid red;*/
+}
+#links li,
+#aboutme li {
+	line-height: 30px;
+}
+#aboutme li {
+	margin-left: 30px;
+}
+footer li a {
+	color: #fff;
+}
+footer li a:hover {
+	color: #11cd6e;
+}
+#footertext {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	color: gray;
+}
+footer .fa-fw {
+	margin-right: 10px;
+} 
+svg {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	opacity: 0.8;
+}
+svg:hover {
+	opacity: 1;
+	border-color: 
+}
